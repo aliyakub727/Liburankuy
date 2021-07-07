@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<script src="../assets/js/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  		<script src="../assets/datepicker/dist/js/bootstrap-datepicker.min.js"></script>
+  		<link href="../assets/datepicker/dist/css/bootstrap-datepicker.min.css" rel="stylesheet">
+		<link href="../assets/css/bootstrap.min.css" rel="stylesheet">
+		<link href="../assets/css/owl-carousel.min.css" rel="stylesheet">
+		<link href="../assets/css/bootstrap.css" rel="stylesheet">
+		<link href="../assets/css/ionicons.min.css" rel="stylesheet">
+		<link href="../assets/css/flaticon.css" rel="stylesheet">
+		<style>
+			.nopadding{
+				padding: 0 !important;
+				margin: 0 !important;
+			}
+		</style>
+	</head>
+	<body>
+		<header class="header navbar fixed-top navbar-expand-md">
+		    <div class="container">
+		        <div class="dropdown">
+				  	<button class="btn btn-secondary" type="" id="dropdownMenuButton"data-toggle="dropdown">
+				    <i class="glyphicon glyphicon-menu-hamburger"></i>
+				  	</button>
+					<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+					    <a class="dropdown-item" href="../index.php">HOME</a>
+					    <a class="dropdown-item" href="../blog.html">BLOG</a>
+					    <a class="dropdown-item" href="../about.html">ABOUT LIBURANKUY</a>
+					    <a class="dropdown-item" href="../faqs.html">FAQ</a>
+					    <a class="dropdown-item" href="../terms.html">TERMS & CONDITIONS</a>
+					    <a class="dropdown-item" href="../privacy.html">PRIVACY POLICY</a>
+					</div>
+				</div>
+		    	    <div class="collapse navbar-collapse flex-sm-row-reverse" id="headernav">
+		            <ul class=" nav navbar-nav menu">
+		                <li>
+		                	<form class="form-inline">
+							    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+							    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+							</form>
+		                </li>
+		            </ul>
+		        </div>
+		    </div>
+		</header>
+		<section>
+			<div class="container">
+				<img src="../assets/img/maldives2.jpg" class="img-fluid" alt="Responsive image">
+			</div>
+		</section>
+		<div class="container">
+			<h4 class="pt30">The Royal Pita Maha</h4>
+			<span class="ion-location">
+				<b>Bali - Indonesia</b>
+			</span>
+			<p><b>Highlight</b> <br> The Royal Pita Maha adalah sebuah villa khas Bali yang menawan dengan pemandangan lembah Sungai Ayung</p>
+			<form>
+				<div class="row">
+				 	<div class="col-lg-6">
+				  		<div class="form-group">
+				   			<label>Tanggal checkin</label>
+				   			<div class="input-group date">
+				   				<div class="input-group-addon">
+				        		   <span class="ion-ios-calendar-outline pr10" style="font-size: 25px"></span>
+				       			</div>
+				       			<input placeholder="masukkan tanggal Awal" type="text" class="form-control datepicker" name="tgl_awal">
+				   			</div>
+				  		</div>
+				  	</div>
+				  	<div class="col-lg-6">
+				  		<div class="form-group">
+				   			<label>Tanggal Checkout</label>
+				   			<div class="input-group date">
+				    			<div class="input-group-addon">
+				    	    	   <span class="ion-ios-calendar-outline pr10" style="font-size: 25px"></span>
+				       			</div>
+				       			<input placeholder="masukkan tanggal Akhir" type="text" class="form-control datepicker" name="tgl_akhir">
+				   			</div>
+				  		</div>
+				 	</div>
+				</div>
+				<div class="form-row">
+					<div class="form-group col-md-6">
+				      <label>Nama Suami</label>
+				      <input class="form-control" placeholder="Nama">
+				    </div>
+				    <div class="form-group col-md-6">
+				      <label>Nama Istri</label>
+				      <input class="form-control" placeholder="Nama">
+				    </div>
+				</div>
+			  <div class="form-row">
+			    <div class="form-group col-md-6">
+			      <label for="inputEmail4">Email</label>
+			      <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+			    </div>
+			    <div class="form-group col-md-6">
+			      <label>Nomer Telepon</label>
+			      <input class="form-control" placeholder="Telepon">
+			    </div>
+			  </div>
+			  <div class="form-group">
+			    <label for="inputAddress">Address</label>
+			    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+			  </div>
+			  <div class="form-group">
+			    <label for="inputAddress2">Address 2</label>
+			    <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+			  </div>
+			  <div class="form-row">
+			    <div class="form-group col-md-6">
+			      <label for="inputCity">Kota</label>
+			      <input type="text" class="form-control" id="inputCity">
+			    </div>
+			    <div class="form-group col-md-4">
+			      <label for="inputState">Provinsi</label>
+			      <select id="inputState" class="form-control">
+			        <option selected>Choose...</option>
+			        <option>Jawa Barat</option>
+			        <option>Jawa Tengah</option>
+			        <option>Jawa Timur</option>
+			        <option>DKI Jakarta</option>
+			        <option>DIY Yogyakarta</option>
+			        <option>Medan</option>
+			        <option>Aceh</option>
+			        <option>Kalimantan Timur</option>
+			        <option>Kalimantan Barat</option>
+			        <option>Kalimantan Tengah</option>
+			      </select>
+			    </div>
+			    <div class="form-group col-md-2">
+			      <label for="inputZip">Kode Pos</label>
+			      <input type="text" class="form-control" id="inputZip">
+			    </div>
+			  </div>
+			  <div class="form-group">
+			    <div class="form-check">
+			      <input class="form-check-input" type="checkbox" id="gridCheck">
+			      <label class="form-check-label" for="gridCheck">
+			        I Aggre with the policy
+			      </label>
+			    </div>
+			  </div>
+			  <button type="submit" class="btn btn-primary">Submit</button>
+			</form>
+		</div><br><br>
+		<footer>
+		<div class="container">
+			<div class="row justify-content-center">
+			    <div class="col-md-4 col-12">
+			        <div class="footer_box">
+			            <div class="footer_header">
+			                <div class="footer_logo">
+			                    <img src="../assets/img/logo.png" alt="" style="max-height: 150px;max-width: 150px">
+			                </div>
+			            </div>
+			            <div class="footer_box_body">
+			                <p class="fa fa-heart-o" style="color: #bfbfbf">
+			                    Email : liburankuy.gmail.com <br>
+		                    	Telp  : 0838-9861-6037 (whatsaap)
+			                </p>
+			        	</div>
+			   		</div>
+				</div>
+			    <div class="col-12 col-md-4">
+			        <div class="footer_box">
+			            <div class="footer_header">
+			                <h4 class="footer_title">
+			                    instagram
+			                </h4>
+			            </div>
+			            <div class="row justify-content-center no-gutters">
+							<div class="col-md-3 col-sm-6">
+							    <div class="the_box">
+							        <div class="the_img">
+							            <img src="../assets/img/instagram/Aceh.jpg" alt="">
+							        </div>
+							    </div>
+							</div>
+							<div class="col-md-3 col-sm-6">
+							    <div class="the_box">
+							        <div class="the_img">
+							            <img src="../assets/img/instagram/Raja.jpg" alt="">
+							        </div>
+							    </div>
+							</div>
+							<div class="col-md-3 col-sm-6">
+							    <div class="the_box">
+							        <div class="the_img">
+							            <img src="../assets/img/instagram/Bali.jpg" alt="">
+							        </div>
+							    </div>
+							</div>
+							<div class="col-md-3 col-sm-6">
+							    <div class="the_box">
+							        <div class="the_img">
+							            <img src="../assets/img/instagram/Kalimantan.jpg" alt="">
+							        </div>
+							    </div>
+							</div>
+						</div>
+						<div class="row justify-content-center no-gutters">
+							<div class="col-md-3 col-sm-6">
+							    <div class="the_box">
+							        <div class="the_img">
+							            <img src="../assets/img/instagram/NTT.jpg" alt="">
+							        </div>
+							    </div>
+							</div>
+							<div class="col-md-3 col-sm-6">
+							    <div class="the_box">
+							        <div class="the_img">
+							            <img src="../assets/img/instagram/Jogja.jpg" alt="">
+							     	</div>
+							    </div>
+							</div>
+							<div class="col-md-3 col-sm-6">
+							    <div class="the_box">
+							        <div class="the_img">
+							            <img src="../assets/img/instagram/Sabang.jpg" alt="">
+							        </div>
+							    </div>
+							</div>
+							<div class="col-md-3 col-sm-6">
+							    <div class="the_box">
+							        <div class="the_img">
+							            <img src="../assets/img/instagram/Sulawesi.jpg" alt="">
+							        </div>
+							    </div>
+							</div>
+						</div>
+			        </div>
+			    </div>
+			    <div class="col-12 col-md-4">
+			        <div class="footer_box">
+			            <div class="footer_header">
+			                <h4 class="footer_title">
+			                    subscribe to our newsletter
+			                </h4>
+			            </div>
+					    <div class="footer_box_body">
+					        <div class="newsletter_form">
+					            <input type="email" class="form-control" placeholder="E-Mail here">
+					            <button class="btn btn-rounded btn-block btn-primary">SUBSCRIBE</button>
+					        </div>
+					    </div>
+			        </div>
+			    </div>
+			</div>
+		</div>
+		</footer>
+		<div class="copyright_footer">
+			<div class="container">
+			    <div class="row justify-content-center">
+			        <div class="col-md-6 col-12">
+			            <p>
+			                Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This Liburan Kuy Traveling <i class="fa fa-heart-o" aria-hidden="true"></i>
+							</p>
+			        </div>
+			        <div class="col-12 col-md-6 ">
+			            <ul class="footer_menu">
+			                <li>
+			                    <a href="../index.php">Home</a>
+			                </li>
+			                <li>
+			                    <a href="../blog.html">BLOG</a>
+		                    </li>
+		                    <li>
+		                        <a href="../about.html">ABOUT LIBURANKUY</a>
+		                    </li>
+		                    <li>
+		                        <a href="../faqs.html">FAQ</a>
+		                    </li>
+		                    <li>
+		                        <a href="../privacy.html">PRIVACY POLICY</a>
+		                    </li>
+		                </ul>
+		            </div>
+		        </div>
+		    </div>
+		</div>
+	</body>
+	<script type="text/javascript">
+ $(function(){
+  $(".datepicker").datepicker({
+      format: 'yyyy-mm-dd',
+      autoclose: true,
+      todayHighlight: true,
+  });
+ });
+</script>
+</html>
